@@ -1,0 +1,110 @@
+<script main src="./Board.mjs"></script>
+<link rel="stylesheet" href="./index.css">
+<template>
+    <div class="fixed-top m-3 board-ui row justify-content-between" hidden>
+        <div class="ps-0 col-3">
+            <div class="fadeAndDownIn easeInDefaultInterpolator time1s0ms">
+                <div class="card">
+                    <div class="card-body d-flex align-items-center">
+                        <span class="text-primary">Potato<b>Retro</b> <small>BETA</small></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-3 pe-0 ">
+            <div class="fadeAndDownIn easeInDefaultInterpolator time1s0ms d-flex justify-content-end">
+                <div class="card">
+                    <div class="card-body d-flex align-items-center">
+                        <div class="clearfix" style="height: 25px;"></div>
+                        <div class="users">
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="fixed-bottom m-3 board-ui row justify-content-center" hidden>
+        <div class="col-2 pe-0">
+            <div class="fadeAndDownIn easeInDefaultInterpolator time1s0ms">
+                <div class="card d-flex flex-row justify-content-between align-items-center">
+                    <div class="item toolbar-button" data-option="board-zoom-in">
+                        <i class="gg-format-text"></i>
+                    </div>
+                    <div class="current-zoom">
+                        100%
+                    </div>
+                    <div class="item toolbar-button" data-option="board-zoom-out">
+                        <i class="gg-format-text"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="left-toolbar m-3 board-ui" hidden>
+        <div class="card vertical-toolbar fadeAndLeftIn easeInDefaultInterpolator time1s25ms" id="elements-bar">
+            <div class="item toolbar-button" data-option="sticky-note">
+                <i class="gg-notes"></i>
+            </div>
+            <div class="item toolbar-button" data-option="plain-text">
+                <i class="gg-format-text"></i>
+            </div>
+        </div>
+    </div>
+    <div class="position-absolute board-ui editing-toolbar" id="customization-bar">
+        <div class="card fadeAndUpIn easeInDefaultInterpolator time1s25ms">
+            <div class="p-1">
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex">
+                        <div class="item toolbar-button small" data-option="bold">
+                            <i class="gg-format-bold"></i>
+                        </div>
+                        <div class="item toolbar-button small" data-option="italic">
+                            <i class="gg-format-italic"></i>
+                        </div>
+                        <div class="item toolbar-button small" data-option="underline">
+                            <i class="gg-format-underline"></i>
+                        </div>
+                    </div>
+                    <div class="toolbar-divider"></div>
+                    <div class="d-flex align-items-center">
+                        <i class="gg-format-color me-2 ms-2"></i>
+                        <div class="item toolbar-button small">
+                            <input type="color" id="fontColorPicker" class="color-picker" value="#000000">
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <i class="gg-format-text me-2 ms-2"></i>
+                        <div class="item toolbar-button small">
+                            <input type="color" id="backgroundColorPicker" class="color-picker" value="#FFFFFF">
+                        </div>
+                    </div>
+                    <div class="toolbar-divider"></div>
+                    <div class="d-flex align-items-center">
+                        <span class="gg-format-uppercase me-2"></span>
+                        <div class="item toolbar-button small" style="width: auto;"> 
+                            <select name="fontSize" id="fontSize">
+                                <option value="1rem">1rem</option>
+                                <option value="1.5rem">1.5rem</option>
+                                <option value="2rem">2rem</option>
+                                <option value="2.5rem">2.5rem</option>
+                                <option value="3rem">3rem</option>
+                            </select>
+                        </div>  
+                    </div>
+                    <div class="toolbar-divider"></div>
+                    <div class="d-flex">
+                        <div class="item toolbar-button small" data-option="delete">
+                            <i class="gg-trash"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="board-area">
+        <div class="board" id="board"></div>
+    </div>
+</template>

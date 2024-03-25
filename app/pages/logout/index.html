@@ -1,0 +1,13 @@
+<script main>
+    export default class Logout {
+        constructor(loginManager) {
+            this.init();
+        }
+
+        init() {
+            loginManager.clear();
+            location.replace('#login')
+        }
+    }
+</script>
+<template></template>

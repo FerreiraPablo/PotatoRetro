@@ -1,0 +1,37 @@
+<script main src="Login.mjs"></script>
+<template>
+    <div class="d-flex justify-content-center flex-column h-100">
+        <div class="d-flex justify-content-center">
+            <div class="p-5 col-12 col-sm-6 col-md-6 col-lg-3">
+                <div>
+                    <form id="loginForm" action="#" hidden>
+                        <div class="fadeAndUpIn time0s5ms easeInDefaultInterpolator text-center">
+                            <h3 class="mb-0">Welcome to</h3>
+                            <h1>Potato<b>Retro</b></h1>
+                            <h5>Before anything please tell us your name.</h5>
+                            <br>
+                        </div>
+                        <div class="fadeAndUpIn time0s75ms easeInDefaultInterpolator">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Name</label>
+                                <input autocomplete="one-time-code" type="text" name="name" class="form-control" id="name"
+                                    placeholder="Ej. Jamie The Destroyer" required="" autocomplete="name">
+                            </div>
+                        </div>
+                        <br>
+                        <button type="submit"
+                            class="btn btn-primary btn-block w-100 fadeAndUpIn time1s0ms easeInDefaultInterpolator"
+                            id="connect">
+                            Done!</button>
+                        <br>
+                        <div class="mt-3 fadeAndUpIn time1s25ms easeInDefaultInterpolator text-center">
+                            <small class="text-muted">
+                                This name is the one that will be showned on the offices.
+                            </small>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

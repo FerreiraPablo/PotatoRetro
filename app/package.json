@@ -1,0 +1,16 @@
+{
+  "name": "the-potato-retro-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "animejs": "^3.2.2",
+    "css.gg": "^2.1.1",
+    "socket.io-client": "^4.7.4"
+  }
+}
